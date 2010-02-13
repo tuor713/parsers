@@ -1,0 +1,18 @@
+usePlugin 'scala'
+
+repositories {
+	mavenRepo urls: 'http://scala-tools.org/repo-releases'
+	mavenRepo urls: "http://repo2.maven.org/maven2/"
+}
+
+dependencies {
+	scalaTools 'org.scala-lang:scala-compiler:2.7.7'
+	scalaTools 'org.scala-lang:scala-library:2.7.7'
+	
+	compile 'org.scala-lang:scala-library:2.7.7'
+	compile 'org.osgi:org.osgi.core:4.2.0'
+	
+	testCompile 'org.scalatest:scalatest:1.0'
+	testCompile 'junit:junit:4.7'
+}
+
